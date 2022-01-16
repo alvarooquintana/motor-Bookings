@@ -1,7 +1,10 @@
 from django.shortcuts import render
+from .models import Booking
 
 
-
-def booking(request):
+def index(request, email, phone):
     
-    pass
+        return render(
+            request, 'index.html'
+        )
+        
